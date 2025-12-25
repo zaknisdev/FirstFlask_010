@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hitung Diskon</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+       <h2>Cek Ganjil/Genap</h2>
+        <form method="POST">
+        <label>Masukkan Angka:</label>
+        <input type="number" name="input_angka" required placeholder="Misal: 45">
+        <button type="submit">Cek Angka</button>
+        </form>
+
+        {% if hasil %}
+        <div class="result">
+            {{ hasil }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
